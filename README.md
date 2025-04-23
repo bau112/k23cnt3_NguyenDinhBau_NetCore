@@ -2,7 +2,7 @@
 Phát triển ứng dụng web với công nghê .NET
 # NỘI DUNG HỌC 
 ##==========================================================================
-#Lesson01:Những kiến thức cơ bản, tạo ứng dụng đầu tiên với App.Net Core MVC
+ #Lesson01:Những kiến thức cơ bản, tạo ứng dụng đầu tiên với App.Net Core MVC
 - ◆ Giới thiệu về .NET Core
 - ◆ Giới thiệu về ASP.NET Core
 - ◆ Cài đặt môi trường chạy
