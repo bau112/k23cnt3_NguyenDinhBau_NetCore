@@ -8,8 +8,7 @@ Phát triển ứng dụng web với công nghê .NET
 - ◆ Cài đặt môi trường chạy
 - ◆ Tạo ứng dụng ASP.NET Core đầu tiên
 - ◆ Cấu trúc project
-- ◆ Tạo ứng dụng ASP.NET Core MVC với template
-##==========================================================================
+- ◆ Tạo ứng dụng ASP.NET Core MVC với template##==========================================================================
 
 #Lesson02
 
