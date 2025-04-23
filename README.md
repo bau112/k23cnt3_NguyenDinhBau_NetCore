@@ -1,7 +1,7 @@
 # K23CNT3 - Nguyễn Đình Báu - NETCORE (8.X)
 Phát triển ứng dụng web với công nghê .NET
 # NỘI DUNG HỌC 
-##==========================================================================
+##=============================================================================
  #Lesson01:Những kiến thức cơ bản, tạo ứng dụng đầu tiên với App.Net Core MVC
 - ◆ Giới thiệu về .NET Core
 - ◆ Giới thiệu về ASP.NET Core
@@ -9,7 +9,7 @@ Phát triển ứng dụng web với công nghê .NET
 - ◆ Tạo ứng dụng ASP.NET Core đầu tiên
 - ◆ Cấu trúc project
 - ◆ Tạo ứng dụng ASP.NET Core MVC với template
-##==========================================================================
+##=============================================================================
 
 #Lesson02
 
