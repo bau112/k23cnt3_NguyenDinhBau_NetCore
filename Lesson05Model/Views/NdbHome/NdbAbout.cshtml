@@ -1,0 +1,15 @@
+﻿@model Lesson05Model.Models.DataModels.NdbMember
+
+@{
+    ViewData["Title"] = "Thông tin sinh viên";
+}
+<div class="alert alert-info">
+    <h1>@ViewData["Title"]</h1>
+    <hr />
+    <h1>Thông tin Member</h1>
+    <p>MemberID : @Model.NdbMemberID</p>
+    <p>Username : @Model.NdbUsername</p>
+    <p>Password : @Model.NdbPassword</p>
+    <p>Fullname : @Model.NdbFullname</p>
+    <p>Email : @Model.NdbEmail</p>
+</div>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Lesson05Model.Models.DataModels.NdbMember>;
+
+@{
+    ViewData["Title"] = "NdbIndex";
+}
+
+<h1>Danh sách Member</h1>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>MemberID</th>
+            <th>MemberUsername</th>
+            <th>MemberPassword</th>
+            <th>MemberFullname</th>
+            <th>MemberEmail</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ndbItem in Model)
+        {
+            <tr>
+                <td>@ndbItem.NdbMemberID</td>
+                <td>@ndbItem.NdbUsername</td>
+                <td>@ndbItem.NdbPassword</td>
+                <td>@ndbItem.NdbFullname</td>
+                <td>@ndbItem.NdbEmail</td>
+            </tr>
+        }
+    </tbody>
+</table>
