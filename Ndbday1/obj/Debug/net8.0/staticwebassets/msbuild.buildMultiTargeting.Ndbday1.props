@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Ndbday1.props" />
+</Project>

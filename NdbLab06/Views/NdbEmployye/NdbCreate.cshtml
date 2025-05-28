@@ -1,0 +1,48 @@
+﻿@model NdbLab06.Models.NdbEmployee
+@{
+    ViewData["Title"] = "Thêm mới nhân viên";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    <form asp-action="NdbCreate" method="post">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Họ tên</span>
+            <input asp-for="NdbName" class="form-control" placeholder="Nhập họ tên" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Ngày sinh</span>
+            <input asp-for="NdbBirthDay" class="form-control" placeholder="Ngày sinh" type="date" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Email</span>
+            <input asp-for="NdbEmail" class="form-control" placeholder="Nhập Email" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Số điện thoại</span>
+            <input asp-for="NdbPhone" class="form-control" placeholder="Nhập số điện thoại" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Lương (VND)</span>
+            <input asp-for="NdbSalary" class="form-control" placeholder="Lương cơ bản" />
+        </div>
+
+        <div class="input-group mb-4">
+            <label class="input-group-text" for="statusSelect">Trạng thái</label>
+            <select asp-for="NdbStatus" id="statusSelect" class="form-select">
+                <option value="true">Đang làm</option>
+                <option value="false">Đã nghỉ</option>
+            </select>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-success">Lưu lại</button>
+            <a asp-action="NdbIndex" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </form>
+</div>

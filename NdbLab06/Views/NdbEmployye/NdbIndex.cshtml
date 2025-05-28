@@ -1,0 +1,50 @@
+﻿@model IEnumerable<NdbLab06.Models.NdbEmployee> 
+
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="text-center mb-4">Danh sách nhân viên </h2>
+        <a href="/NdbEmployee/NdbCreate" class="btn-primary">Thêm mới</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Lương</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ndbEmp in Model)
+            {
+                <tr>
+                    <td>@ndbEmp.NdbId</td>
+                    <td>@ndbEmp.NdbName</td>
+                    <td>@ndbEmp.NdbBirthDay.ToString("dd/MM/yyyy")</td>
+                    <td>@ndbEmp.NdbEmail</td>
+                    <td>@ndbEmp.NdbPhone</td>
+					<td class="text-end">@ndbEmp.NdbSalary.ToString("N0")</td>
+					<td class="text-center">
+                        @if (ndbEmp.NdbStatus)
+                        {
+                            <span class="badge bg-success">Đang làm</span>
+                        }
+                        else
+                        { 
+                            <span class="badge bg-secondary">Nghỉ</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
